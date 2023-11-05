@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+body{
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.conatiner{
+  width: 100vw;
+  height: 100vh;
+}
+
+.card{
+  width: 400px;
+  height: 550px;
+  /* border: 1px solid red; */
+  margin: 50px auto 0px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 2px #ccc; 
+  /* 5px -5px 2px #ccc; */
+}
+
+.card .blue{
+  /* width: 100%; */
+  position: relative;
+  height: 35%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #4071ED;
+}
+
+.blue-circle{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  top: 27%;
+  left: 27%;
+  border: 5px solid #4071ED;
+}
+
+/* .white{
+  border: 5px solid #fff;
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+} */
+
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #fff;
+  padding: 3px;
+}
+
+.content{
+  width: 100%;
+  height: 60%;
+  min-height: auto;
+  /* border: 2px solid black; */
+}
+
+h2{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  /* border: 2px solid gold; */
+}
+
+h4{
+  width: 100%;
+  text-align: center;
+}
+
+.logos{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 2px solid brown; */
+  margin: 20px 0px;
+}
+
+.btn{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  /* border: 2px solid brown; */
+}
+
+button{
+  background-color: #4071ED;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p{
+  width: 100%;
+  /* border: 2px solid red; */
+  margin: 20px 0px;
+  padding: 20px 70px;
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  color: #343232;
+}
+
+span{
+  padding-right: 20px;
+}
+
+.pos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 420px) {
+  .card{
+    width: 300px;
+    height: 500px;
+  }
+
+  .blue-circle{
+    width: 150px;
+    height: 150px;
+    top: 25%;
+    left: 25%;
+  }
+
+  h2{
+    margin-top: 35px;
+    font-size: 18px;
+    /* border: 2px solid gold; */
+  }
+  
+  h4{
+    font-size: 14px;
+  }
+
+  /* .fa {
+    padding: 15px 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  } */
+
+  p{
+    padding: 10px 20px;
+    /* border: 2px solid red; */
+  }
+}
