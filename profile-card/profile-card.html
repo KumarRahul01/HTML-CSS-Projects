@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="logo-style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="conatiner">
+    <div class="card">
+      <div class="blue">
+        <div class="blue-circle">
+          <img src="./pic/image-rahul.png" alt="pic">
+        </div>
+      </div>
+      <div class="content">
+        <h2>Rahul Kumar</h2>
+        <h4>FrontEnd Developer & Blogger</h4>
+        <div class="logos">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+        <div class="btn">
+          <button>Subscribe</button>
+          <button>Message</button>
+        </div>
+        <p class="pos">
+          <i class='bx bx-heart'><span class="count" onclick="increaseHeart()">60k</span></i>
+          <i class='bx bx-comment'></i> <span class="count">40k</span>
+          <i class='bx bx-share'></i> <span class="count">20k</span>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+
+
+    function increaseHeart(){
+      let num1 = document.getElementsByClassName("count")[0].innerHTML;
+      num1++;
+    };
+    
+
+  </script>
+</body>
+
+</html>
